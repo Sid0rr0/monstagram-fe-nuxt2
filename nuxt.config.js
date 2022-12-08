@@ -47,6 +47,10 @@ export default {
   modules: [
   ],
 
+  publicRuntimeConfig: {
+    apiURL: process.env.API_URL
+  },
+
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
     postcss: {

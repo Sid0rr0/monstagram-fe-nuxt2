@@ -2,7 +2,7 @@
   <vue-word-cloud
     :words="words"
     :color="([, weight]) => weight > 50 ? 'DeepPink' : weight > 10 ? 'purple' : 'RoyalBlue'"
-    font-family="Roboto"
+    font-family="Helvetica"
     :spacing="0.3"
   >
     <template slot-scope="{text, weight, word}">
