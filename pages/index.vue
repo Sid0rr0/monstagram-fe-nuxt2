@@ -13,12 +13,11 @@
         <span>Session ID:</span>
         <input type="text" class="mt-3 px-1 border-2">
       </div>
-      <div class="flex justify-between items-center">
-        <div />
+      <div class="flex justify-end items-center">
         <button class="mt-3 px-3 py-1 border-2 rounded-full" @click="getTags">
           Tagy
         </button>
-        <button class="mt-3 px-3 py-1 border-2 rounded-full" @click="getWords">
+        <button class="mt-3 ml-3 px-3 py-1 border-2 rounded-full" @click="getWords">
           Slova
         </button>
       </div>
@@ -30,13 +29,11 @@
 
     <word-cloud
       v-if="(words.length > 0)"
-      style="height: 680px; width: 1440px;"
       :words="words"
     />
 
     <word-cloud
       v-if="tags.length > 0"
-      style="height: 680px; width: 1440px;"
       :words="tags"
     />
 
